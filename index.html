@@ -15,6 +15,9 @@
   .lead{color:var(--muted);margin:0 0 28px}
   .btn{display:block;text-align:center;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;font-size:18px;padding:16px;border-radius:10px}
   .btn:hover{background:var(--accent2)}
+  .btn2{display:block;text-align:center;margin-top:10px;border:2px solid var(--accent);color:var(--accent);text-decoration:none;font-weight:600;font-size:16px;padding:12px;border-radius:10px}
+  .btn2:hover{background:var(--card)}
+  a{color:var(--accent)}
   .who{text-align:center;color:var(--muted);font-size:14px;margin:10px 0 32px}
   .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin-bottom:16px}
   .card h2{font-size:17px;margin:0 0 10px}
@@ -30,12 +33,13 @@
   <p class="lead">Send personalised emails to many people at once, from your own IITGN Gmail. Upload an Excel sheet, write one message, and everyone gets their own copy with their name and details filled in.</p>
 
   <a class="btn" href="https://script.google.com/macros/s/AKfycbwA8Ijbd4u9jVVrgBy3_6nUbVHdmHvEFBtv0bE9quDFG6VABEb7QqS1IKgNtBzBM3uo/exec">Open Mail Merge</a>
+  <a class="btn2" href="sample-sheet.xlsx" download>Download sample Excel sheet</a>
   <p class="who">For @iitgn.ac.in and @alumni.iitgn.ac.in accounts</p>
 
   <div class="card">
     <h2>How to use it</h2>
     <ol>
-      <li>Prepare an Excel sheet. The first row holds column names, for example <code>Email</code>, <code>Name</code>, <code>Batch</code>.</li>
+      <li>Prepare an Excel sheet. The first row holds column names, for example <code>Email</code>, <code>Name</code>, <code>Batch</code>. Not sure how? <a href="sample-sheet.xlsx" download>Download the sample sheet</a>, replace the rows with your own people, and add or rename columns as you like.</li>
       <li>Open Mail Merge and upload the sheet.</li>
       <li>Write your subject and message. Click a column name to insert it, like <code>{{Name}}</code>.</li>
       <li>Check the preview, then send a test to yourself.</li>
