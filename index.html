@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IITGN Mail Merge</title>
+<meta name="description" content="Free personalised bulk email sender for the IIT Gandhinagar community.">
+<style>
+  :root{--bg:#f6f7f9;--card:#fff;--ink:#1d2330;--muted:#5b6472;--line:#e3e6eb;--accent:#1f4e8c;--accent2:#173d6e;--note:#fff6dc;--noteink:#7a5200}
+  @media (prefers-color-scheme:dark){:root{--bg:#12161d;--card:#1b212b;--ink:#e8ebf0;--muted:#a3acb9;--line:#2b3340;--accent:#4c84d1;--accent2:#6a9be0;--note:#2e2714;--noteink:#e8c873}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+  main{max-width:640px;margin:0 auto;padding:48px 16px}
+  h1{font-size:30px;line-height:1.2;margin:0 0 8px}
+  .lead{color:var(--muted);margin:0 0 28px}
+  .btn{display:block;text-align:center;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;font-size:18px;padding:16px;border-radius:10px}
+  .btn:hover{background:var(--accent2)}
+  .who{text-align:center;color:var(--muted);font-size:14px;margin:10px 0 32px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin-bottom:16px}
+  .card h2{font-size:17px;margin:0 0 10px}
+  ol{margin:0;padding-left:20px}li{margin:6px 0}
+  .note{background:var(--note);color:var(--noteink);border-radius:10px;padding:14px 16px;font-size:14px}
+  code{background:var(--bg);border:1px solid var(--line);border-radius:5px;padding:1px 5px;font-size:14px}
+  footer{color:var(--muted);font-size:13px;text-align:center;margin-top:32px}
+</style>
+</head>
+<body>
+<main>
+  <h1>IITGN Mail Merge</h1>
+  <p class="lead">Send personalised emails to many people at once, from your own IITGN Gmail. Upload an Excel sheet, write one message, and everyone gets their own copy with their name and details filled in.</p>
+
+  <a class="btn" href="https://script.google.com/macros/s/AKfycbwA8Ijbd4u9jVVrgBy3_6nUbVHdmHvEFBtv0bE9quDFG6VABEb7QqS1IKgNtBzBM3uo/exec">Open Mail Merge</a>
+  <p class="who">For @iitgn.ac.in and @alumni.iitgn.ac.in accounts</p>
+
+  <div class="card">
+    <h2>How to use it</h2>
+    <ol>
+      <li>Prepare an Excel sheet. The first row holds column names, for example <code>Email</code>, <code>Name</code>, <code>Batch</code>.</li>
+      <li>Open Mail Merge and upload the sheet.</li>
+      <li>Write your subject and message. Click a column name to insert it, like <code>{{Name}}</code>.</li>
+      <li>Check the preview, then send a test to yourself.</li>
+      <li>Click <b>Send to everyone</b>. Download the report to see who got it.</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>First time only</h2>
+    <p style="margin:0 0 10px">Google asks for permission to send email from your account:</p>
+    <ol>
+      <li>Click <b>Review permissions</b> and pick your IITGN account.</li>
+      <li>If you see "Google hasn't verified this app", click <b>Advanced</b>, then <b>Go to IITGN Mail Merge</b>.</li>
+      <li>Click <b>Allow</b>.</li>
+    </ol>
+  </div>
+
+  <div class="note">Emails go out from <b>your own</b> account and show in your Gmail Sent folder. You can send about 1,500 emails a day on an IITGN account. Signed in to several Google accounts? Use an incognito window so the right one is used.</div>
+
+  <footer>Free tool for the IITGN community.</footer>
+</main>
+</body>
+</html>
